@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.root {
+    height: calc(100% - 4rem);
+    width: calc(70% - 4rem);
+    background-color: black;
+    opacity: 0.2;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    border: 0.1rem solid white;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 0 #FFF;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    line-height: 15rem;
+}
+
+.card:active {
+    box-shadow: none;
+}
